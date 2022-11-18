@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+  box-sizing: border-box;
+      }
+
+   body,html{
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px ;
+    margin-left: 45px ;
+
+   }
+
+   /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  min-width: 300px;
+  padding: 10px;
+  height: 70%;
+ 
+
+  }
+
+.row{
+  margin: auto;
+  float: right;
+  padding-top: 10% ;
+  padding-right: 10%;
+  height: 100%;
+  display: flex;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.type{
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-family: Montserrat;
+  font-size: 10px;
+  color: hsl(228, 12%, 48%);
+  padding-top: 5%;
+
+}
+.desc{
+  font-size: 14px;
+  font-family: Montserrat;
+  color: hsl(228, 12%, 48%);
+  
+}
+.name{
+  font-family: Fraunces;
+}
+.pre{
+  font-size: 10px;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+  margin-left: 15px;
+  position: relative;
+  bottom: 40px;
+  right: -100px;
+
+
+ }
+.current{
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+  display: inline-block;
+  
+}
+.btn{
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.addToCart{
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  display: inline-block;
+  position:relative;
+  bottom: 2px;
+
+}
+.bg-img{
+    background-image: url("./images/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: 300px;
+    min-width: 300px;
+    height: 450px;
+
+  }
+  .info{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 0em 1em;
+    height: 100%;
+    width: 300px;
+    height: 450px;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="row">
+
+    <div class="column bg-img" style="background-color: white;" >
+    </div>
+
+    <div class="column info" style="background-color: white;">
+      <p class="type">Perfume</p>
+      <h1 class="name">Gabrielle Essence Eau De Parfum</h1>
+      <p class="desc">A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <h2 class="current">$149.99 </h2><span class="pre">$169.99</span>      
+      <button class="btn"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+       <p class="addToCart">&nbsp; Add to Cart</p></button>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
